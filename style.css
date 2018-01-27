@@ -7,8 +7,9 @@ body {
     margin: 0;
 }
 h1 {
-    font-size: 85px;
+    font-size: 45px;
     font-weight: 300;
+    color: #015266;
     margin: 0;
 }
 h2 {
@@ -25,7 +26,6 @@ li {
 }
 .banner {
     background-color: #012c38;
-    color: #FFF;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -33,8 +33,13 @@ li {
     background-image: url('bannerbg.jpg');
     background-position: top center;
 }
-.banner > div {
-    text-align: center;
+.banner h1 {
+    font-size: 85px;
+    color: #FFF;
+}
+.banner h2 {
+    font-size: 20px;
+    color: #FFF;
 }
 .section {
     margin: auto;
