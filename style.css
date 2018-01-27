@@ -6,6 +6,8 @@
     flex-direction: column;
     justify-content: center;
     height: 340px;
+    background-image: url('bannerbg.jpg');
+    background-position: top center;
 }
 .banner > div {
     text-align: center;
