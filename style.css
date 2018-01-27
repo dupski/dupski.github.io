@@ -1,0 +1,12 @@
+
+.banner {
+    background-color: #012c38;
+    color: #FFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 340px;
+}
+.banner > div {
+    text-align: center;
+}
