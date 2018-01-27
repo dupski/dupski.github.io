@@ -38,9 +38,8 @@ li {
 }
 .section {
     margin: auto;
-    padding: 30px 60px;
+    padding: 25px 60px;
     max-width: 980px;
-    border-bottom: 1px solid #eee;
 }
 .section-inset {
     margin-left: 100px;
