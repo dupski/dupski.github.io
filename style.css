@@ -62,5 +62,8 @@ li {
 	justify-content: center;
 }
 .project-info > div {
-	margin: 20px;
+	margin: 0 20px;
+}
+.copyright-notice {
+	font-size: 12px;
 }
