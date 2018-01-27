@@ -18,6 +18,14 @@ h2 {
 	color: #015266;
 	margin: 0;
 }
+h3 {
+	font-size: 20px;
+	font-weight: 400;
+	margin: 0;
+}
+a, a:active, a:visited {
+	color: #015266;
+}
 li {
 	margin-bottom: 8px;
 }
@@ -48,4 +56,11 @@ li {
 }
 .section-inset {
 	margin-left: 100px;
+}
+.project-info {
+	display: flex;
+	justify-content: center;
+}
+.project-info > div {
+	margin: 20px;
 }
