@@ -7,18 +7,21 @@ body {
 	margin: 0;
 }
 h1 {
+	line-height: 1;
 	font-size: 45px;
 	font-weight: 300;
 	color: #015266;
 	margin: 0;
 }
 h2 {
+	line-height: 1;
 	font-size: 25px;
 	font-weight: 400;
 	color: #015266;
 	margin: 0;
 }
 h3 {
+	line-height: 1;
 	font-size: 20px;
 	font-weight: 400;
 	margin: 0;
@@ -48,12 +51,15 @@ nav {
 	z-index: 1;
 }
 .nav-content > div {
-	margin: auto 30px;
+	margin: auto 15px;
 }
-.nav-content img {
+#nav-title {
+	padding-left: 15px;
+}
+#nav-links img {
 	opacity: 0.8;
 	height: 25px;
-	margin-left: 30px;
+	margin: 0 15px;
 	vertical-align: middle;
 }
 #nav-bg {
@@ -73,6 +79,15 @@ nav {
 #nav-bg.opaque {
 	opacity: 0.8;
 }
+@media (max-width: 700px) {
+	#nav-title {
+		display: none;
+	}
+	#nav-links {
+		width: 100%;
+		text-align: center;
+	}
+}
 .banner {
 	background-color: #012c38;
 	display: flex;
@@ -85,6 +100,7 @@ nav {
 .banner h1 {
 	font-size: 85px;
 	color: #FFF;
+	margin-bottom: 15px;
 }
 .banner h2 {
 	font-size: 20px;
