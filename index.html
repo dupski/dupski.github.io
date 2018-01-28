@@ -13,7 +13,22 @@
 	<title>RussellBriggs.co</title>
 </head>
 <body>
-
+<nav>
+	<div id="nav-bg"></div>
+	<div class="nav-content">
+		<div>
+			RussellBriggs.co
+		</div>
+		<div>
+			<a href="https://www.linkedin.com/in/russell-briggs-b654a94/"
+				><img src="contact-linkedin.png" alt="LinkedIn" /></a>
+			<a href="https://github.com/dupski"
+				><img src="contact-github.png" alt="GitHub" /></a>
+			<a href="mailto:mail@russellbriggs.co"
+				><img src="contact-email.png" alt="E-mail" /></a>
+		</div>
+	</div>
+</nav>
 <section class="banner">
 	<div class="text-center">
 		<h1>Russell Briggs</h1>
@@ -23,7 +38,7 @@
 <section class="section text-center">
 	I am a dedicated and passionate software engineer with over 12 years commercial experience.
 	Please find a summary of my skills and experience below, and if you think I could be of benefit
-	to your project, you can contact me using one of the links above!
+	to your project, you can contact me using one of the links above.
 </section>
 <section class="section">
 	<div class="section-inset">
@@ -78,7 +93,7 @@
 		<b>Technologies:</b>
 		<ul>
 			<li>Typescript 2.6</li>
-			<li>React & Redux</li>
+			<li>React &amp; Redux</li>
 			<li>HapiJS, Redis</li>
 			<li>Fully dockerised pipeline</li>
 		</ul>
@@ -145,5 +160,19 @@
 <section class="section copyright-notice">
 	(C) Russell Briggs 2018
 </section>
+<script>
+	var navOpaque = false;
+	var navBGEl = document.getElementById('nav-bg');
+	window.addEventListener('scroll', function(e) {
+		if (window.scrollY > 50 && !navOpaque) {
+			navBGEl.classList.add('opaque');
+			navOpaque = true;
+		} 
+		else if (window.scrollY <= 50 && navOpaque) {
+			navBGEl.classList.remove('opaque');
+			navOpaque = false;
+		} 
+	});
+</script>
 </body>
 </html>
