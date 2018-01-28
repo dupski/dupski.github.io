@@ -121,6 +121,11 @@ nav {
 .section-inset {
 	margin-left: 100px;
 }
+@media (max-width: 850px) {
+	.section-inset {
+		margin-left: 0px;
+	}
+}
 .project-info {
 	display: flex;
 	justify-content: center;
