@@ -35,6 +35,9 @@ li {
 .text-center {
 	text-align: center;
 }
+img {
+	max-width: 100%;
+}
 nav {
 	position: fixed;
 	width: 100%;
@@ -132,6 +135,16 @@ nav {
 }
 .project-info > div {
 	margin: 0 20px;
+}
+@media (max-width: 960px) {
+	.project-info {
+		flex-direction: column;
+		max-width: 650px;
+	}
+	.project-info > :first-child {
+		text-align: center;
+		margin-bottom: 30px;
+	}
 }
 .copyright-notice {
 	font-size: 12px;
