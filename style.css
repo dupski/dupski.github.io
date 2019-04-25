@@ -35,6 +35,9 @@ li {
 .text-center {
 	text-align: center;
 }
+.summary-text {
+	font-size: 18px;
+}
 nav {
 	position: fixed;
 	width: 100%;
