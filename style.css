@@ -118,13 +118,8 @@ nav {
 	padding: 25px 15px;
 	max-width: 980px;
 }
-.section-inset {
-	margin-left: 100px;
-}
-@media (max-width: 850px) {
-	.section-inset {
-		margin-left: 0px;
-	}
+.section.narrow {
+	max-width: 640px;
 }
 .project-info {
 	display: flex;
@@ -133,21 +128,22 @@ nav {
 .project-info > div {
 	margin: 0 20px;
 }
-.project-info .screenshot {
+.project-info .screenshot-wrapper {
 	width: 400px;
-	text-align: right;
+	text-align: center;
+}
+.project-info img {
+	max-width: 100%;
+	height: auto;
 }
 @media (max-width: 960px) {
 	.project-info {
 		flex-direction: column;
 		max-width: 650px;
 	}
-	.project-info > :first-child {
-		text-align: center;
+	.project-info .screenshot-wrapper {
+		width: auto;
 		margin-bottom: 30px;
-	}
-	.project-info .screenshot {
-		max-width: 100%;
 	}
 }
 .copyright-notice {
